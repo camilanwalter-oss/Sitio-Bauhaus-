@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bauhaus — Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" aria-label="Bauhaus Inicio"><span class="logo-mark">▭▯◯</span><span class="logo-text">BAUHAUS</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="/pages/historia.html">HISTORIA</a></li>
+        <li><a href="/pages/obras.html">OBRAS</a></li>
+        <li><a href="/pages/artistas.html">ARTISTAS</a></li>
+        <li><a href="/pages/eventos.html">EVENTOS</a></li>
+        <li><a href="/pages/contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1>Contacto</h1>
+        <p>Escríbenos para visitas, prensa o colaboraciones.</p>
+      </div>
+    </section>
+
+    <section class="section grid cols-2">
+      <form class="card" onsubmit="event.preventDefault(); this.reset(); alert('¡Gracias!');">
+        <div class="body">
+          <div class="grid cols-2">
+            <div>
+              <label>Nombre<br/>
+                <input type="text" required placeholder="Tu nombre" />
+              </label>
+            </div>
+            <div>
+              <label>Email<br/>
+                <input type="email" required placeholder="tu@email.com" />
+              </label>
+            </div>
+          </div>
+          <div style="margin-top:12px;">
+            <label>Mensaje<br/>
+              <textarea rows="6" required placeholder="¿Cómo podemos ayudarte?"></textarea>
+            </label>
+          </div>
+          <div style="margin-top:16px;">
+            <button class="btn primary" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+      <div class="card" aria-label="Mapa">
+        <div class="body">
+          <h3>Visítanos</h3>
+          <p class="muted">Dirección: Bauhaus Platz 1, Dessau</p>
+        </div>
+        <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(17,138,178,0.2), rgba(230,57,70,0.2)); border-top: 1px solid rgba(255,255,255,0.08);"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="logo compact"><span class="logo-mark">▭▯◯</span> BAUHAUS</div>
+        <p class="muted">© <span id="year"></span> Bauhaus.</p>
+      </div>
+      <nav aria-label="Secundario">
+        <ul>
+          <li><a href="/pages/historia.html">Historia</a></li>
+          <li><a href="/pages/obras.html">Obras</a></li>
+          <li><a href="/pages/artistas.html">Artistas</a></li>
+          <li><a href="/pages/eventos.html">Eventos</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
